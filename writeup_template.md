@@ -39,13 +39,13 @@ TODO
 ### 2. Potential shortcomings in this pipeline
 
 
-One potential shortcoming would be what would happen when the car changes lane(s) and multiple line markings would cross the region of interest? Additional parameter tuning in Hough detection can be time-consuming. 
+One potential shortcoming would be what would happen when the car changes lane(s) and multiple line markings would cross the region of interest?  
 
 Another shortcoming could be ...in general additional scenary eg. curves, hills, weather conditions, other cars, reflection could undermine the detection process in current configuration. 
 
 
 ### 3. Two possible improvements to this pipeline with additional data and CNN technology
 
-A possible improvement would be additional test data to further fine-tune parameters.
+A possible improvement would be additional test data to further fine-tune parameters. However, Additional "manual" parameter tuning eg.in Canny & Hough function can be time-consuming, specifically utilizing Notebook IDE.
 
 Another potential improvement could be to utilize convolutional neural networks to learn the detection from bigger and more diverse image data.
