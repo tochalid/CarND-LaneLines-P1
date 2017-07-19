@@ -23,7 +23,7 @@ The goals of this project are the following:
 
 ### 1. Pipeline Description. The draw_lines() function contains trigonometric logic, averaging and extrapoltion in oder to draw a single line for left and right lane edges.
 
-My pipeline consisted of 6 steps and returns an image with detected lane lines.
+My pipeline consisted of 5 steps and returns one image with detected lane lines.
 1. Grayscale the image 
 2. Gaussion Blur for better accuracy 
 3. Canny edge detection 
@@ -31,22 +31,21 @@ My pipeline consisted of 6 steps and returns an image with detected lane lines.
 5. Hough algorithm to detect lines  
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
-
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
+TODO
 
 ![alt text][image1]
 
 
-### 2. Identify potential shortcomings with your current pipeline
+### 2. Potential shortcomings in this pipeline
 
 
-One potential shortcoming would be what would happen when ... 
+One potential shortcoming would be what would happen when the car changes lane(s) and multiple line markings would cross the region of interest? Additional parameter tuning in Hough detection can be time-consuming. 
 
-Another shortcoming could be ...
+Another shortcoming could be ...in general additional scenary eg. curves, hills, weather conditions, other cars, reflection could undermine the detection process in current configuration. 
 
 
-### 3. Suggest possible improvements to your pipeline
+### 3. Two possible improvements to this pipeline with additional data and CNN technology
 
-A possible improvement would be to ...
+A possible improvement would be additional test data to further fine-tune parameters.
 
-Another potential improvement could be to ...
+Another potential improvement could be to utilize convolutional neural networks to learn the detection from bigger and more diverse image data.
