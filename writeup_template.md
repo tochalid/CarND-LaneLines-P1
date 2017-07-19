@@ -15,7 +15,7 @@ The goals of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/grayscale.jpg "Grayscale"
+[image1]: ./initial_img_whiteCarLaneSwitch.jpg"
 
 ---
 
@@ -34,7 +34,12 @@ In order to draw a single line on the left and right lanes, I modified the draw_
 TODO
 
 ![alt text][image1]
-
+[image10]: ./gray_img_whiteCarLaneSwitch.jpg
+[image11]: ./blur_img_whiteCarLaneSwitch.jpg
+[image12]: ./canny_edges_img_whiteCarLaneSwitch.jpg	
+[image13]: ./masked_img_whiteCarLaneSwitch.jpg
+[image14]: ./hough_lines_img_whiteCarLaneSwitch.jpg
+[image15]: ./weight_img_whiteCarLaneSwitch.jpg
 
 ### 2. Potential shortcomings in this pipeline
 
