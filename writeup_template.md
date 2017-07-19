@@ -15,7 +15,7 @@ The goals of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./initial_img_whiteCarLaneSwitch.jpg"
+[image1]: /initial_img_whiteCarLaneSwitch.jpg"
 
 ---
 
@@ -33,7 +33,6 @@ My pipeline consisted of 5 steps and returns one image with detected lane lines.
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
 TODO
 
-![alt text][image1]
 [image10]: gray_img_whiteCarLaneSwitch.jpg
 [image11]: ./blur_img_whiteCarLaneSwitch.jpg
 [image12]: ./canny_edges_img_whiteCarLaneSwitch.jpg	
