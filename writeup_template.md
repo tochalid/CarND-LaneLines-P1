@@ -15,7 +15,7 @@ The goals of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: /initial_img_whiteCarLaneSwitch.jpg"
+[image1]: "/initial_img_whiteCarLaneSwitch.jpg"
 
 ---
 
