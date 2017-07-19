@@ -1,14 +1,14 @@
 # **Finding Lane Lines on the Road** 
 
-## Writeup Template
+## Writeup Chalid Mannaa, Term1 - 07/2017
 
-### You can use this file as a template for your writeup if you want to submit it as a markdown file. But feel free to use some other method and submit a pdf if you prefer.
+### Ubuntu 16.04 LTS, Python 3, Anaconda, IPython/Notebook
 
 ---
 
 **Finding Lane Lines on the Road**
 
-The goals / steps of this project are the following:
+The goals of this project are the following:
 * Make a pipeline that finds lane lines on the road
 * Reflect on your work in a written report
 
@@ -21,9 +21,15 @@ The goals / steps of this project are the following:
 
 ### Reflection
 
-### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
+### 1. Pipeline description. As part of the description, explain how you modified the draw_lines() function.
 
-My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
+My pipeline consisted of 6 steps and returns an image with detected lane lines by transforming with:
+    > Grayscale 
+    > Gaussion Blur 
+    > Canny 
+    > Polynom Mask 
+    > Hough 
+    > Overlay Lane Lines 
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
 
