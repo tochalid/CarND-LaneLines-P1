@@ -36,16 +36,16 @@ My pipeline consisted of 5 steps and returns one image with detected lane lines.
 4. Polynom Mask to find the region of interest 
 5. Hough algorithm to detect lines  
 
-![alt text]([image10])
-![alt text]([image11])
-![alt text](image12])
-![alt text]([image13])
-![alt text]([image14])
+![alt text][image10]
+![alt text][image11]
+![alt text][image12]
+![alt text][image13]
+![alt text][image14]
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
 TODO
 
-![alt text]([image15])
+![alt text][image15]
 
 ### 2. Potential shortcomings in this pipeline
 
