@@ -12,11 +12,17 @@ The goals of this project are the following:
 * Make a pipeline that finds lane lines on the road
 * Reflect on your work in a written report (pls see following)
 
-
 [//]: # (Image References)
 
-[image1]: "/initial_img_whiteCarLaneSwitch.jpg"
+[image0]: /initial_img_whiteCarLaneSwitch.jpg "Initial"
+[image10]: /gray_img_whiteCarLaneSwitch.jpg "Grayscale"
+[image11]: /blur_img_whiteCarLaneSwitch.jpg "Gauss Blur"
+[image12]: /canny_edges_img_whiteCarLaneSwitch.jpg "Canny Edges"
+[image13]: /masked_img_whiteCarLaneSwitch.jpg "Polynom Mask"
+[image14]: /hough_lines_img_whiteCarLaneSwitch.jpg "Hough Lines"
+[image15]: /weight_img_whiteCarLaneSwitch.jpg "Draw Line"
 
+![alt text][image0]
 ---
 
 ### Reflection
@@ -30,15 +36,16 @@ My pipeline consisted of 5 steps and returns one image with detected lane lines.
 4. Polynom Mask to find the region of interest 
 5. Hough algorithm to detect lines  
 
+![alt text][image10]
+![alt text][image11]
+![alt text][image12]
+![alt text][image13]
+![alt text][image14]
+
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
 TODO
 
-[image10]: /gray_img_whiteCarLaneSwitch.jpg
-[image11]: /blur_img_whiteCarLaneSwitch.jpg
-[image12]: /canny_edges_img_whiteCarLaneSwitch.jpg	
-[image13]: /masked_img_whiteCarLaneSwitch.jpg
-[image14]: /hough_lines_img_whiteCarLaneSwitch.jpg
-[image15]: /weight_img_whiteCarLaneSwitch.jpg
+![alt text][image15]
 
 ### 2. Potential shortcomings in this pipeline
 
