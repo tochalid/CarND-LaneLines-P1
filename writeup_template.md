@@ -10,7 +10,7 @@
 
 The goals of this project are the following:
 * Make a pipeline that finds lane lines on the road
-* Reflect on your work in a written report
+* Reflect on your work in a written report (pls see following)
 
 
 [//]: # (Image References)
@@ -21,15 +21,14 @@ The goals of this project are the following:
 
 ### Reflection
 
-### 1. Pipeline description. As part of the description, explain how you modified the draw_lines() function.
+### 1. Pipeline Description. The draw_lines() function contains trigonometric logic, averaging and extrapoltion in oder to draw a single line for left and right lane edges.
 
-My pipeline consisted of 6 steps and returns an image with detected lane lines by transforming with:
-    > Grayscale 
-    > Gaussion Blur 
-    > Canny 
-    > Polynom Mask 
-    > Hough 
-    > Overlay Lane Lines 
+My pipeline consisted of 6 steps and returns an image with detected lane lines.
+1. Grayscale the image 
+2. Gaussion Blur for better accuracy 
+3. Canny edge detection 
+4. Polynom Mask to find the region of interest 
+5. Hough algorithm to detect lines  
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
 
