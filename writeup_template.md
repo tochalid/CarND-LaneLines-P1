@@ -14,15 +14,16 @@ The goals of this project are the following:
 
 [//]: # (Image References)
 
-[image0]: /initial_img_whiteCarLaneSwitch.jpg "Initial"
-[image10]: /gray_img_whiteCarLaneSwitch.jpg "Grayscale"
-[image11]: /blur_img_whiteCarLaneSwitch.jpg "Gauss Blur"
-[image12]: /canny_edges_img_whiteCarLaneSwitch.jpg "Canny Edges"
-[image13]: /masked_img_whiteCarLaneSwitch.jpg "Polynom Mask"
-[image14]: /hough_lines_img_whiteCarLaneSwitch.jpg "Hough Lines"
-[image15]: /weight_img_whiteCarLaneSwitch.jpg "Draw Line"
+[image00]: ./test_images_output/0_initial_solidWhiteCurve.jpg "Initial"
+[image10]: ./test_images_output/1_gray_solidWhiteCurve.jpg "Grayscale"
+[image11]: ./test_images_output/2_blur_solidWhiteCurve.jpg "Gauss Blur"
+[image12]: ./test_images_output/3_cannyEdges_solidWhiteCurve.jpg "Canny Edges"
+[image13]: ./test_images_output/4_maskedRoI_solidWhiteCurve.jpg "Polynom Mask"
+[image14]: ./test_images_output/5_houghLines_solidWhiteCurve.jpg "Hough Lines"
+[image15]: ./test_images_output/6_extrapolLines_solidWhiteCurve.jpg "Extrapolation"
+[image16]: ./test_images_output/7_weight_solidWhiteCurve.jpg "Detected Lane"
 
-![alt text][image0]
+![alt text][image00]
 ---
 
 ### Reflection
@@ -41,11 +42,11 @@ My pipeline consisted of 5 steps and returns one image with detected lane lines.
 ![alt text][image12]
 ![alt text][image13]
 ![alt text][image14]
-
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
-TODO
-
 ![alt text][image15]
+
+In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ... linear extrapolation to the start and endpoints based on averaged x-coordinates. Left and right lane side is distinguished by the slope of the respective line. The region of interest determines the y-coordinates without calculation based on the image shape. The "horizon" (upper horizontal line of the region of interest is hardcoded to 60% height, leaving 40% in the region of interest.
+
+![alt text][image16]
 
 ### 2. Potential shortcomings in this pipeline
 
@@ -57,6 +58,6 @@ Another shortcoming could be ...in general additional scenary eg. curves, hills,
 
 ### 3. Two possible improvements to this pipeline with additional data and CNN technology
 
-A possible improvement would be additional test data to further fine-tune parameters. However, Additional "manual" parameter tuning eg.in Canny & Hough function can be time-consuming, specifically utilizing Notebook IDE.
+A possible improvement would be additional test data to further fine-tune parameters. However, Additional "manual" parameter tuning eg.in Canny & Hough function can be time-consuming, specifically utilizing Notebook IDE. Change of algorithms or adding an additional pipeline step might improve the results, eg. use weighed when averaging based on the slope or (pixel-)distance of the particular hough line from the bottom (camera).
 
 Another potential improvement could be to utilize convolutional neural networks to learn the detection from bigger and more diverse image data.
