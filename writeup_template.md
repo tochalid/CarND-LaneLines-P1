@@ -20,8 +20,7 @@ The goals of this project are the following:
 [image12]: ./test_images_output/3_cannyEdges_solidWhiteCurve.jpg "Canny Edges"
 [image13]: ./test_images_output/4_maskedRoI_solidWhiteCurve.jpg "Polynom Mask"
 [image14]: ./test_images_output/5_houghLines_solidWhiteCurve.jpg "Hough Lines"
-[image15]: ./test_images_output/6_extrapolLines_solidWhiteCurve.jpg "Extrapolation"
-[image16]: ./test_images_output/7_weight_solidWhiteCurve.jpg "Detected Lane"
+[image15]: ./test_images_output/7_weight_solidWhiteCurve.jpg "Detected Lane"
 
 ![alt text][image00]
 ---
@@ -42,11 +41,10 @@ My pipeline consisted of 5 steps and returns one image with detected lane lines.
 ![alt text][image12]
 ![alt text][image13]
 ![alt text][image14]
-![alt text][image15]
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ... linear extrapolation to the start and endpoints based on averaged x-coordinates. Left and right lane side is distinguished by the slope of the respective line. The region of interest determines the y-coordinates without calculation based on the image shape. The "horizon" (upper horizontal line of the region of interest is hardcoded to 60% height, leaving 40% in the region of interest.
 
-![alt text][image16]
+![alt text][image15]
 
 ### 2. Potential shortcomings in this pipeline
 
